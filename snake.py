@@ -51,7 +51,7 @@ class Snake:
             self.draw_eyes()
 
     def draw_eyes(self):
-        if screen_size[0] >= 800:
+        if screen_size[0] == 800:
             coord = self.pos[0] * space_size, self.pos[1] * space_size
             if self.orientation == 'N':
                 rectangle = pygame.Rect(coord[0] + 4, coord[1], 4, 4)
